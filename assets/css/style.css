@@ -1,0 +1,217 @@
+*{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+}
+
+/*######################## LOADER ##################*/
+.loader{
+  position: fixed;
+  left:0px;
+  top:0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  opacity: .9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*######################## ICON CLASSES ##################*/
+.icon{
+        width: var(--icon);
+        height: var(--icon);
+}
+
+.icon-container{
+        display: flex;
+        text-decoration: none;
+}
+
+.icon-container img{
+        filter: invert(75%);
+        width: var(--icon);
+        height: var(--icon);
+        margin-right: var(--space);
+}
+
+.icon-container h6{
+        width: 70%;
+        color: var(--semi-white);
+}
+
+.icon-container:hover h6{
+        color: white;
+}
+.icon-container:hover img{
+        filter: invert(100%);
+        width: var(--icon-hover);
+        height: var(--icon-hover);
+        transition: 2s;
+
+}
+
+
+
+/*######################## SIDE MENU CLASSES ##################*/
+.menu-head{
+        display: flex;
+        justify-content: center;
+        padding: var(--space);
+}
+
+.navbar-nav li{
+        margin-right: var(--space);
+}
+
+.sub-list{
+        padding-left: var(--sub-list);
+}
+
+.sub-list2{
+        padding-left: calc(var(--sub-list) * 2);
+}
+
+
+#sidebar-wrapper{
+        color:white;
+}
+
+
+/*######################## GENERAL CLASSES ##################*/
+
+.disabled{
+        pointer-events: none;
+        opacity: 0.4;
+}
+
+.scroll{
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+}
+
+
+.form{
+        border: 1px solid black;
+        padding: var(--space);
+}
+
+.info h5{
+        text-align: center;
+        font-weight: bold;
+
+}
+
+.info,
+.inputs{
+        margin-bottom: var(--space);
+        width:100%;
+}
+
+.form-min{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: var(--space);
+        margin-bottom: var(--space);
+}
+
+.form-min-in{
+        max-width: 360px;
+}
+
+.label-form{
+        margin-bottom: 0px;
+        margin-top: var(--ten-px);
+}
+
+
+.table-container{
+        display: block;
+        overflox-x: auto;
+}
+
+.table-min{
+        font-size: var(--ten-px);
+}
+
+.no-border{
+        border: none;
+}
+
+.noHover-icon:hover img{
+        width: var(--icon) !important;
+        height: var(--icon) !important;
+        transition: unset !important;
+}
+
+
+
+/*######################## BOOTSTRAP REWRITE RULES ##################*/
+
+.col-int{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+}
+
+.row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+}
+
+.form-control{
+        margin-bottom: var(--ten-px);
+}
+
+
+/*######################## MAIN RULES ##################*/
+
+main{
+        min-height: 90vh;
+        padding-top: var(--little-space);
+}
+
+footer{
+        padding: var(--space);
+
+}
+
+table{
+        border-collapse: separate;
+}
+th, td, tr{
+        padding: 1px !important;
+        border: 1px solid black !important;
+        text-align: center;
+}
+
+
+/*######################## ID RULES ##################*/
+
+
+#botones{
+
+        border:1px solid black;
+        padding-top: var(--little-space);
+        padding-bottom: var(--little-space);
+
+
+}
+
+
+
+/*######################## MEDIA CLASSES ##################*/
+
+@media screen and (max-width: 550px) {
+        table, .delete {
+                display: block;
+                overflow-x: auto;
+                font-size: var(--ten-px);
+
+        }
+
+
+}

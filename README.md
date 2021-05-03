@@ -1,9 +1,9 @@
-# cfe_app
+# CFE Application
 Repository of the CFE's aplication that i made in my profesional practices
 
 It's an application developed in PHP lenguage and using some JS AJAX for the managment of certain data (user information modifying, for example).
 
-#Information
+# Information
 The app folder has some changes from the original one:
   1) "vendor" folder content has removed, incluiding bootstrap and the phpoffice libraries.
   2) images were deleted.
